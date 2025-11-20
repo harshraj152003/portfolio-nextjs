@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { FC } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { WordCyclerEncrypted } from './ui/WordCyclerEncrypted.tsx'; 
+import { WordCyclerEncrypted } from './ui/WordCyclerEncrypted'
+import { Vortex } from "./ui/vortex";
 
 const HeroSection: FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-white bg-black p-8">
+      <Vortex
+        backgroundColor="black"
+        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+      >
       <div className="max-w-4xl w-full text-center">
         
         <h1 className="text-6xl sm:text-7xl md:text-8xl font-extrabold mb-4 leading-tight">
@@ -43,6 +48,7 @@ const HeroSection: FC = () => {
 
         </div>
       </div>
+      </Vortex>
     </div>
   );
 };
