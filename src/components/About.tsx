@@ -10,7 +10,7 @@ const skillsData: HoverEffectItem[] = [
   {
     title: "Web Development",
     description: "Expertise in core front-end technologies: HTML, CSS, JavaScript, React, and Next.js.",
-    link: "#web-dev", // Use relevant internal/external links
+    link: "#web-dev", 
   },
   {
     title: "Programming Languages",
@@ -47,7 +47,7 @@ const About: React.FC = () => {
           {/* Image Section */}
           <div className="lg:w-1/3 flex justify-center">
             <img 
-              src="/assets/myi2.jpeg"
+              src="/assets/myimg.jpeg"
               alt="Harsh Raj" 
               className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-2xl border-4 border-black-400 transform transition duration-500 hover:scale-[1.02]"
             />
